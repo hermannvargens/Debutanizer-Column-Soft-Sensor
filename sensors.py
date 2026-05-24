@@ -1,4 +1,4 @@
-import streamlit as st
+update_layoutimport streamlit as st
 import pandas as pd
 import time
 import plotly.graph_objects as go
@@ -166,9 +166,20 @@ if executar_scada and st.session_state.passo_atual < len(df_base):
                                  mode='lines', name='TI-304 Bandeja (°C)', line=dict(color='#ff00ff', width=1.5)), row=4, col=1)
         
         # Configuração do tema escuro padrão para sistemas industriais
-        fig.update_layout(height=700, template="plotly_dark", showlegend=True,
-                          margin=dict(l=20, r=20, t=30, b=20),
-                          legend=dict(orientation="h", y=1.05, x=0))
+        # Configuração do tema escuro padrão para sistemas industriais com correções de margem
+        fig.update_layout(
+            height=750,                      # Aumentamos um pouco a altura para dar mais respiro
+            template="plotly_dark", 
+            showlegend=True,
+            margin=dict(l=20, r=20, t=80, b=20),  # Aumentamos o topo (t) de 30 para 80 para afastar do título
+            legend=dict(
+                orientation="h", 
+                y=1.08,                      # Movemos a legenda mais para cima (fora da área dos subplots)
+                x=0,
+                xanchor="left",
+                yanchor="bottom"
+            )
+        )
         
         fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='#252e38')
         fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='#252e38')
