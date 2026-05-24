@@ -24,7 +24,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("🏭 \n PIMS - Historiador de Variáveis da Planta")
+st.title(" PIMS - Historiador de Variáveis da Planta")
 st.subheader("Varredura Completa dos Sensores da Coluna Debutanizadora em Unidades de Engenharia")
 
 # ==============================================================================
@@ -119,7 +119,7 @@ if executar_scada and st.session_state.passo_atual < len(df_base):
     col_dados, col_trends = st.columns([1, 2.3])
     
     with col_dados:
-        st.markdown("### 🎛️ Leituras Atuais")
+        st.markdown("### Leituras Atuais")
         
         st.markdown("**Seção 100: Alimentação de Carga**")
         st.metric(label="FI-101 (Vazão de Carga)", value=f"{vazao_a:.2f} m³/h")
@@ -138,7 +138,7 @@ if executar_scada and st.session_state.passo_atual < len(df_base):
         st.metric(label="AI-301 (Teor de C4 no Resíduo - Cromatógrafo)", value=f"{c4_f:.3f} %")
 
     with col_trends:
-        st.markdown("### 📊 Gráficos de Tendência Sincronizados (Multitrend)")
+        st.markdown("### Gráficos de Tendência Sincronizados (Multitrend)")
         
         # Criação de 4 subplots para acomodar todos os sensores sem poluição visual
         fig = make_subplots(
