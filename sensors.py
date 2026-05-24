@@ -1,4 +1,4 @@
-update_layoutimport streamlit as st
+import streamlit as st
 import pandas as pd
 import time
 import plotly.graph_objects as go
