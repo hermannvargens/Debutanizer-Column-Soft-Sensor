@@ -72,7 +72,7 @@ if 'passo_atual' not in st.session_state:
 if 'hist_tempo' not in st.session_state: st.session_state.hist_tempo = []
 if 'hist_c4' not in st.session_state: st.session_state.hist_c4 = []
 if 'hist_vazao_alim' not in st.session_state: st.session_state.hist_vazao_alim = []
-  if 'hist_temp_alim' not in st.session_state: st.session_state.hist_temp_alim = []
+if 'hist_temp_alim' not in st.session_state: st.session_state.hist_temp_alim = []
 if 'hist_pres_topo' not in st.session_state: st.session_state.hist_pres_topo = []
 if 'hist_vazao_refluxo' not in st.session_state: st.session_state.hist_vazao_refluxo = []
 if 'hist_temp_bandeja' not in st.session_state: st.session_state.hist_temp_bandeja = []
