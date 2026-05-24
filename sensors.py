@@ -24,7 +24,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("🏭 PIMS - Historiador de Variáveis da Planta")
+st.title("🏭 \n PIMS - Historiador de Variáveis da Planta")
 st.subheader("Varredura Completa dos Sensores da Coluna Debutanizadora em Unidades de Engenharia")
 
 # ==============================================================================
